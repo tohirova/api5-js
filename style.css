@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.control {
+    min-height: 600px;
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 400px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.443);
+    border-radius: 40px;
+    text-align: center;
+    padding: 35px 20px;
+    margin: 20px;
+    box-shadow: 6px 5px 14px black;
+}
+
+.card .img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.card .title {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card .open {
+    padding: 10px 25px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 4px 0px 10px black;
+}
+
+.modal {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.918);
+    color: white;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s linear;
+    transform: scale(0);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.img2 {
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.modal .title {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.modal .desc {
+    width: 700px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 320px;
+}
+
+.modal .price {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.modal .close {
+    padding: 10px 25px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 4px 0px 10px black;
+    font-size: 18px;
+}
